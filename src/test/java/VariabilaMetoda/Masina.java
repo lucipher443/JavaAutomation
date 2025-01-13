@@ -1,6 +1,6 @@
 package VariabilaMetoda;
 import org.testng.annotations.Test;
-import java.sql.SQLOutput;
+//import java.util.Scanner;
 
 public class Masina {
 
@@ -13,7 +13,6 @@ public class Masina {
         dateMasina("Volvo", "V60", 2017);
         dateMasina("Volvo", "V60 CC", 2022);
 
-        calculMedie(7.5, 9.5);
     }
 
     public void dateMasina(String param1, String param2, int param3) {
@@ -25,13 +24,4 @@ public class Masina {
         System.out.println("Modelul masinii este: " + model);
         System.out.println("Anul Fabricatiei este: " + anFabricatie);
     }
-
-    //calculam media a 2 nr
-
-    public void calculMedie(Double nota1, Double nota2) {
-        Double rezultat = (nota1+nota2)/2;
-        System.out.println("Media este: " + rezultat);
-    }
-
-
 }

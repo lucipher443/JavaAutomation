@@ -2,6 +2,8 @@ package VariabilaMetoda;
 
 import org.testng.annotations.Test;
 
+//import java.util.Scanner;
+
 public class Student {
 
     // class = sablon care defineste proprietatile si comportamentul unei entitati specifice
@@ -47,6 +49,11 @@ public class Student {
         Sex = 'M';
         AreDiploma = true;
 
+        calculMedie(7.5, 9.5);
+
+//        citireNote();
+
+
         //System.out.println(Nume + " " + Prenume + "," + " " + Varsta + "," + " " + Adresa + "," + " " + Inaltime +"," + " " + Greutate + "," + " " + Sex + "," + " " + AreDiploma);
 
         System.out.println("Nume student: " +Nume);
@@ -66,14 +73,31 @@ public class Student {
         Integer nota1 = 8;
         Integer nota2 = 7;
         Integer nota3 = 9;
-        Integer medie = (nota1+nota2+nota3)/3;
+        int medie = (nota1+nota2+nota3)/3;
         System.out.println("Media studentului este: " +medie);
     }
 
     //metoda cu return
     public Integer getSalariu(){
-        Integer salariu = 100000;
-        return salariu;
+        return 100000;
     }
+
+    //calculam media a 2 nr
+
+    public void calculMedie(Double nota1, Double nota2) {
+        double rezultat = (nota1+nota2)/2;
+        System.out.println("Media este: " + rezultat);
+    }
+
+//    public void citireNote(){
+//
+//        Scanner scanner = new Scanner(System.in);
+//        int nota = scanner.nextInt();
+//        while (nota < 0 || nota > 10){
+//            System.out.println("Nota " + nota + " trebuie sa fie intre 1 si 10. Te rog, introdu o valoare valida");
+//            nota = scanner.nextInt();
+//        }
+//        System.out.println("Nota " + nota + " este valida");
+//    }
 
 }
